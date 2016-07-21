@@ -16,3 +16,4 @@ RUN mv elasticsearch-1.5.2 /usr/local/elasticsearch
 RUN chkconfig iptables off
 RUN ln -s /usr/bin/*java* /bin
 RUN /usr/local/elasticsearch/bin/plugin --install mobz/elasticsearch-head
+ENTRYPOINT ['/bin/bash']
